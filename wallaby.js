@@ -38,13 +38,8 @@ module.exports = function(wallaby) {
 
       wallaby.delayStart();
 
-      System.config({
-        paths: {
-          '*': '*.js'
-        }
-      });
       for (; i < len; i++) {
-        promises.push(System['import'](wallaby.tests[i].replace(/\.js/, '')));
+        promises.push(System['import'](wallaby.tests[i]));
       }
 
       System['import']('core-js')

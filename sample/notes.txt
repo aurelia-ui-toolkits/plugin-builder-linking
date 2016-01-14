@@ -1,0 +1,3 @@
+jspm.cmd bundle src/*.js + plugin-builder --inject --minify
+
+rename build.js in jspm.browser.js to build

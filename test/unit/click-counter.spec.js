@@ -1,4 +1,4 @@
-import {ClickCounter} from 'src/click-counter';
+import {ClickCounter} from 'src/click-counter.js';
 
 describe('Click counter', () => {
   it('increases counter', () => {

@@ -5,5 +5,5 @@ export function configure(aurelia) {
     .plugin('plugin-builder', plugin => plugin.useClickCounter());
 
   aurelia.start()
-  .then(au => au.setRoot('app'));
+  .then(au => au.setRoot('app.js'));
 }

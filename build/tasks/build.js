@@ -87,13 +87,6 @@ gulp.task('copy-css', function() {
 
 });
 
-gulp.task('create-package-json', function () {
-  require('fs').writeFileSync(paths.output + 'es6/package.json', '{ "main": "index" }');
-  require('fs').writeFileSync(paths.output + 'commonjs/package.json', '{ "main": "index" }');
-  require('fs').writeFileSync(paths.output + 'amd/package.json', '{ "main": "index" }');
-  require('fs').writeFileSync(paths.output + 'system/package.json', '{ "main": "index" }');
-});
-
 gulp.task('build', function(callback) {
   return runSequence(
     'clean',
@@ -101,7 +94,6 @@ gulp.task('build', function(callback) {
     ['build-es6-temp', 'build-es6', 'build-commonjs', 'build-amd', 'build-system'],
     ['copy-html', 'copy-css'],
     'build-dts',
-    // 'create-package-json',
     callback
   );
 });
