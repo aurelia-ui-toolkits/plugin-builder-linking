@@ -1,0 +1,73 @@
+{
+  "jspm": {
+    "dependencies": {
+      "babel": "npm:babel-core@05.8.33",
+      "plugin-builder": "local:plugin-builder@master"
+    },
+    "devDependencies": {},
+    "peerDependencies": {
+      "assert": "github:jspm/nodelibs-assert@^0.2.0-alpha",
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1",
+      "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.0.6",
+      "aurelia-loader": "npm:aurelia-loader@1.0.0-beta.1",
+      "babel-runtime": "npm:babel-runtime@^5.8.20",
+      "buffer": "github:jspm/nodelibs-buffer@^0.2.0-alpha",
+      "child_process": "github:jspm/nodelibs-child_process@^0.2.0-alpha",
+      "core-js": "npm:core-js@^1.2.6",
+      "css": "github:systemjs/plugin-css@0.1.20",
+      "events": "github:jspm/nodelibs-events@^0.2.0-alpha",
+      "font-awesome": "npm:font-awesome@^4.5.0",
+      "fs": "github:jspm/nodelibs-fs@^0.2.0-alpha",
+      "http": "github:jspm/nodelibs-http@^0.2.0-alpha",
+      "json": "github:systemjs/plugin-json@^0.1.0",
+      "module": "github:jspm/nodelibs-module@^0.2.0-alpha",
+      "net": "github:jspm/nodelibs-net@^0.2.0-alpha",
+      "path": "github:jspm/nodelibs-path@^0.2.0-alpha",
+      "process": "github:jspm/nodelibs-process@^0.2.0-alpha",
+      "stream": "github:jspm/nodelibs-stream@^0.2.0-alpha",
+      "text": "github:systemjs/plugin-text@^0.0.4",
+      "tty": "github:jspm/nodelibs-tty@^0.2.0-alpha",
+      "url": "github:jspm/nodelibs-url@^0.2.0-alpha",
+      "util": "github:jspm/nodelibs-util@^0.2.0-alpha"
+    },
+    "overrides": {
+      "local:plugin-builder@master": {
+        "main": "index"
+      },
+      "npm:babel-core@5.8.33": {
+        "main": "browser.js",
+        "dependencies": {},
+        "jspmNodeConversion": false,
+        "map": {
+          "regenerator/runtime": "babel-runtime/regenerator/runtime"
+        },
+        "meta": {
+          "browser.js": {
+            "exports": "babel"
+          }
+        }
+      },
+      "npm:babel-runtime@5.8.34": {
+        "main": false,
+        "dependencies": {}
+      },
+      "npm:font-awesome@4.5.0": {
+        "main": "css/font-awesome.css!",
+        "jspmNodeConversion": false,
+        "registry": "jspm",
+        "dependencies": {
+          "css": "0.1"
+        }
+      },
+      "npm:inherits@2.0.1": {
+        "ignore": [
+          "test.js"
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.1",
+    "jspm": "^0.17.0-beta.2"
+  }
+}
