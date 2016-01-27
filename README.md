@@ -7,6 +7,7 @@ This project is inspired by the experience the [Aurelia-UI-Toolkits](https://git
 ### Running this project
 1. `npm install` (both in the root directory and in the sample directory)
 2. `jspm.cmd install` in the root directory
-3. in the sample directory run `jspm.cmd link ../dist/system plugin-builder`
-4. in the sample directory run `jspm.cmd install`
-5. `gulp watch`
+3. `gulp build` in the root directory
+4. in the sample directory run `jspm.cmd link ../devbuild/system plugin-builder`
+5. in the sample directory run `jspm.cmd install`
+6. `gulp watch`
