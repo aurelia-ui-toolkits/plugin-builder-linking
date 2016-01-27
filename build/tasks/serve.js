@@ -17,7 +17,7 @@ gulp.task('serve', ['build'], function(done) {
   };
 
   // Rewrite the sample/src/<plugin-name> folder to dist/system folder
-  options.server.routes['/src/' + paths.packageName] = path.join(paths.output, 'system');
+  // options.server.routes['/src/' + paths.packageName] = path.join(paths.output, 'system');
 
   bs.init(options, done);
 });

@@ -1,5 +1,5 @@
 {
-  "name": "plugin-builder",
+  "name": "plugin-builder-linking",
   "version": "0.0.1",
   "registry": "github",
   "description": "Starting point for building Aurelia plugins",
@@ -7,9 +7,9 @@
     "aurelia",
     "plugin"
   ],
-  "homepage": "https://github.com/aurelia-ui-toolkits/plugin-builder",
+  "homepage": "https://github.com/aurelia-ui-toolkits/plugin-builder-linking",
   "bugs": {
-    "url": "https://github.com/aurelia-ui-toolkits/plugin-builder/issues"
+    "url": "https://github.com/aurelia-ui-toolkits/plugin-builder-linking/issues"
   },
   "license": "MIT",
   "author": "aurelia-ui-toolkits",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aurelia-ui-toolkits/plugin-builder"
+    "url": "https://github.com/aurelia-ui-toolkits/plugin-builder-linking"
   },
   "jspm": {
     "main": "index",
@@ -30,18 +30,7 @@
     "directories": {
       "lib": "dist/system"
     },
-    "dependencies": {},
     "devDependencies": {},
-    "peerDependencies": {
-      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1",
-      "babel-runtime": "npm:babel-runtime@^5.8.20",
-      "core-js": "npm:core-js@^1.2.6",
-      "fs": "jspm/nodelibs-fs@^0.2.0-alpha",
-      "path": "jspm/nodelibs-path@^0.2.0-alpha",
-      "polymer/mutationobservers": "^0.4.2",
-      "process": "jspm/nodelibs-process@^0.2.0-alpha",
-      "text": "systemjs/plugin-text@^0.0.4"
-    },
     "overrides": {
       "npm:babel-runtime@5.8.34": {
         "main": false,
@@ -59,12 +48,13 @@
     "browser-sync": "^2.9.3",
     "conventional-changelog": "0.0.11",
     "del": "^1.1.0",
-    "gulp": "^3.8.10",
+    "gulp": "^3.9.0",
     "gulp-babel": "^5.1.0",
     "gulp-bump": "^0.3.1",
     "gulp-concat": "^2.6.0",
     "gulp-coveralls": "^0.1.4",
     "gulp-eslint": "^1.0.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-insert": "^0.5.0",
     "gulp-rename": "^1.2.2",
     "gulp-typedoc": "^1.2.1",
@@ -83,7 +73,7 @@
     "karma-sourcemap-loader": "^0.3.6",
     "object.assign": "^1.0.3",
     "phantomjs-polyfill": "0.0.1",
-    "require-dir": "^0.1.0",
+    "require-dir": "^0.3.0",
     "run-sequence": "^1.0.2",
     "through2": "^2.0.0",
     "vinyl": "^1.1.0",
